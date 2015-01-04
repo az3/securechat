@@ -151,7 +151,7 @@ SOFTWARE.
                                             </div> -->
 
                                             <div class="form-actions">
-                                                <button type="submit" class="btn btn-primary">Save</button> 
+                                                <button type="button" id="form-submit" class="btn btn-primary">Save</button> 
                                                 <button class="btn" type="reset">Cancel</button>
                                             </div> <!-- /form-actions -->
 
@@ -251,6 +251,15 @@ SOFTWARE.
                     var sender_passphrase = $('#sender_passphrase').val();
                     var sender_rsa_bit_length = $('#sender_rsa_bit_length').val();
                     generatePublicKey(username, sender_passphrase, sender_rsa_bit_length, work);
+                });
+
+                $('#form-submit').click(function () {
+                    var old_password = $('#old_password').val();
+                    if (old_password === '') {
+                        alert("Please enter your current (old) password to make any changes.");
+                    } else {
+                        $('#edit-profile').submit();
+                    }
                 });
 
                 function work(sender_public_key) {
