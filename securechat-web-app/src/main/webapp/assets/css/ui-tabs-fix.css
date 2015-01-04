@@ -1,0 +1,70 @@
+/* 
+    Created on : Dec 31, 2014, 8:21:21 PM
+    Author     : azureel
+    Licence    : meeeh.
+*/
+
+.ui-tabs-vertical { 
+    /* width: 55em; */
+    width: 100%;
+}
+.ui-tabs-vertical .ui-tabs-nav { 
+    padding: .2em .1em .2em .2em; 
+    float: left; /* ok for desktop, bad on mobile. fix below via media. */
+    /* width: 12em; */
+    width: 12%; 
+}
+.ui-tabs-vertical .ui-tabs-nav li { 
+    clear: left; width: 100%; 
+    border-bottom-width: 1px !important; 
+    border-right-width: 0 !important; 
+    margin: 0 -1px .2em 0; 
+}
+.ui-tabs-vertical .ui-tabs-nav li a { 
+    display:block; 
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
+    padding-bottom: 0; 
+    padding-right: .1em; 
+    border-right-width: 1px; 
+    border-right-width: 1px; 
+}
+.ui-tabs-vertical .ui-tabs-panel { 
+    padding: 1em; 
+    /* margin-left: 13em; */
+    /* float: right; */
+    /* width: 40em; */
+    width: 94%; 
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 2px;
+}
+.ui-widget-header {
+    /* background: #f9f6f1; */
+    background: none;
+    border: none;
+}
+.ui-widget-content{
+    background: none;
+    border: none;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #19bc9c;
+    text-decoration: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #f9f6f1;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: none;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #555555; /* clicked, chosen tab */
+    text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+    .ui-tabs-vertical .ui-tabs-nav {
+        float:none;
+    }
+}
