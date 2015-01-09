@@ -14,4 +14,5 @@ Used Resources
 
 Demo
 ----
-[http://54.77.8.8:8080/securechat-web/](http://54.77.8.8:8080/securechat-web/)
+[https://chat.cagricelebi.com/](https://chat.cagricelebi.com/)
+[http://azureel.instela.com/](http://azureel.instela.com/)
