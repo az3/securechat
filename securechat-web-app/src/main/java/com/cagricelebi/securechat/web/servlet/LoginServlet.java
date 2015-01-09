@@ -74,7 +74,7 @@ public class LoginServlet extends HttpServlet {
 
             ServletContext servletContext = getServletContext();
             String contextPath = servletContext.getContextPath();
-            response.sendRedirect(contextPath);
+            response.sendRedirect(contextPath + "/home");
 
         } catch (Exception e) {
             logger.error(e);
