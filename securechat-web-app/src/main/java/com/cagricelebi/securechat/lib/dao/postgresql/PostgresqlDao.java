@@ -45,6 +45,7 @@ public class PostgresqlDao {
      -- tested with postgresql 9.4
    
      CREATE ROLE "chat" login PASSWORD '****' NOINHERIT;
+     create schema if not exists "chat";
      alter schema "chat" owner to "chat";
      -- jdbc:postgresql://localhost:5432/postgres
      -- psql --host=localhost --port=5432 --username=chat -W postgres
